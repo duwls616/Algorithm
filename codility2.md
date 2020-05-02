@@ -27,3 +27,4 @@ public int solution(int[] A){
 ```
    
 * 1001, 0011, 1001, 0011, 1001, 0111, 1001을 비트연산하면 짝이없는 7(0111)만 남는다.
+* 참고로 비트단위 연산자는 ~(bitwise not), &(bitwise and), |(bitwise or), ^(bitwise xor), <<(bitwise left shift), >>(bitwise right shift)
