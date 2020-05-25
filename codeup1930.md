@@ -4,12 +4,12 @@ SuperSum(0,n)=n (n은  모든 양의 정수)
 SuperSum(k,n)=SuperSum(k−1,1)+SuperSum(k−1,2)+...+SuperSum(k−1,n)       
 k와 n이 여러개 주어진다. SuperSum의 값을 각각 출력하시오.         
           
-입력     
+>__입력__     
 1 3   
 2 3    
 4 10    
 10 10    
-출력    
+__출력__    
 6    
 10    
 2002    
