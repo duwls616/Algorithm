@@ -21,6 +21,7 @@ each element of array A is an integer within the range [0..2,147,483,647].
        
           
 ## 풀이
+(0,1)(0,2)(0,4)(1,2)(1,3)(1,4)(1,5)(2,3)(2,4)(3,4) = 11개   
 현재의 point를 중심으로 시작점(lower)과 끝점(upper)를 구하여 각각의 배열에 저장한다.   
 upper 보다 작은 lower 들은 반드시 가장 작은 upper 보다 큰 반지름을 갖는다.        
 다음 upper 에서 겹치지 않게 현재 J 만큼 빼준다.   
