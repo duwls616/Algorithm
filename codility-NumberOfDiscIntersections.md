@@ -31,14 +31,14 @@ class Solution {
         long[] lower = new long[A.length];
         
         for(int i=0;i<A.length;i++){
-            upper[i] = i+A[i];
-            lower[i] = i-A[i];
+            upper[i] = (long)i+A[i];
+            lower[i] = (long)i-A[i];
         }
         
         Arrays.sort(upper);
         Arrays.sort(lower);
         
-        long interaction = 0;
+        int interaction = 0;
         int j = 0;
         for(int i=0;i<A.length;i++){
             while(j<A.length && upper[i] >= lower[j]){
