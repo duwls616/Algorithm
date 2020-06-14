@@ -2,7 +2,7 @@
      
     	
      
-![screenshot3](/../img/numberOfDisk.png)   
+![screenshot3](../img/numberOfDisk.png)   
     
 >The figure below shows discs drawn for N = 6 and A as follows:   
   A[0] = 1     
