@@ -13,7 +13,9 @@ import java.util.Stack;
 
 class Solution {
     public int solution(String S) {
+		//stack push 텍스트
         String text ="{[(";
+		//stack pop 텍스트
 		String text2 ="}])";
 		
 		Stack stack = new Stack();
