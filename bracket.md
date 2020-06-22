@@ -12,28 +12,28 @@ that, given a string S consisting of N characters, returns 1 if S is properly ne
 import java.util.Stack;
 
 class Solution {
-    public int solution(String S) {
-        String text ="{[(";
-		String text2 ="}])";
-		
-		Stack stack = new Stack();
-		for(int i=0;i<S.length();i++) {
-			char temp = S.charAt(i);
-			if(text.indexOf(temp)>-1)
-				stack.push(text.indexOf(temp));
-			else if(text2.indexOf(temp) >-1) {
-			    if(stack.isEmpty())
-			        return 0;
-				if((int)stack.peek() == text2.indexOf(temp)) {
-					stack.pop();
-				}
+public int solution(String S) {
+	String text ="{[(";
+	String text2 ="}])";
+	
+	Stack stack = new Stack();
+	for(int i=0;i<S.length();i++) {
+		char temp = S.charAt(i);
+		if(text.indexOf(temp)>-1)
+			stack.push(text.indexOf(temp));
+		else if(text2.indexOf(temp) >-1) {
+			if(stack.isEmpty())
+				return 0;
+			if((int)stack.peek() == text2.indexOf(temp)) {
+				stack.pop();
 			}
 		}
-		
-		if(stack.isEmpty())
-			return 1;
-		else
-			return 0;
-    }
+	}
+	
+	if(stack.isEmpty())
+		return 1;
+	else
+		return 0;
+}
 }
 ```
